@@ -53,27 +53,61 @@ button {
     padding: 1%;
 }
 
+/* Rest of your existing CSS styles */
+
+/* Rest of your existing CSS styles */
+
 footer {
-    background-color: #c1bebe;
+    background-color: #e2a4a4;
     color: white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    /* Add border-radius for rounded corners */
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    /* Add a small distance from the left edge of the window */
+    right: 10px;
+    /* Add a small distance from the right edge of the window */
+    margin: 10px;
+    /* Add a small margin to the footer */
+}
+
+a.links {
+    color: #4c303e;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .header {
     display: inline;
 }
 
-.links:link {
-    color: #C9E09E;
-    background-color: transparent;
-    text-decoration: none;
+/* Rest of your existing CSS styles */
+
+/* Style for the project name popup */
+.project-name-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    /* Add opacity to create fade-in effect */
+    transition: opacity 0.3s ease;
+    /* Add transition for opacity change */
 }
 
-.featured-launches-links {
-    color: #004BAD;
-    background-color: transparent;
-    text-decoration: none;
+/* Show the project name popup when hovering over the image */
+.card-img-top:hover+.project-name-popup {
+    display: block;
+    opacity: 1;
+    /* Change opacity to 1 to make it visible */
 }
 
 .past-launches {
